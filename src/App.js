@@ -2,7 +2,7 @@ import "./styles.css";
 
 import queryString from "query-string";
 
-import samplePDF from "./hanaro.pdf";
+import samplePDF from "./61112.pdf";
 
 import SinglePagePDFViewer from "./components/singlepage";
 import AllPagesPDFViewer from "./components/all-pages";
@@ -11,12 +11,12 @@ import AllPagesPDFViewer from "./components/all-pages";
 export default function App({ match, location }) {
   const query = queryString.parse(location.search);
   console.log(query.productId);
-  const themeColor = "#000";
+  const themeColor = "#348934";
   const titleTextColor = "white";
-  const appTitle = "암보험 다이렉트";
+  const appTitle = "실비 다이렉트";
   const customercenterEmail = "skglgk0897@daum.net";
   const customercenterTel = "";
-  const customerName = "김혜철";
+  const customerName = "김수형";
 
   if (query.productId !== "3574a6948d") {
     return (
